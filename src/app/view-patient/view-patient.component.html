@@ -1,0 +1,31 @@
+
+<h1>By Name</h1>
+<input type="text" #patientName>
+<button (click)="getPatients(patientName.value)">Search </button>
+
+<h1>By City</h1>
+<input type="text" #patientCity>
+<button (click)="getPatients2(patientCity.value)">Search </button>
+
+<h1>By Disease</h1>
+<input type="text" #patientDisease>
+<button (click)="getPatients3(patientDisease.value)">Search </button>
+
+
+<div *ngFor="let x of allPatients">
+    <table>
+       
+            <tr>Id:{{x.patientId}}</tr>
+            <tr>Name:{{x.patientName}}</tr>
+            <tr>City:{{x.patientCity}}</tr>
+            <tr>Age:{{x.patientAge}}</tr>
+            <tr>Gender:{{x.patientGender}}</tr>
+            <tr>Disease:{{x.patientDisease}}</tr>
+            <tr>PhoneNumber:{{x.patientPhoneNumber}}</tr>
+            <tr>BloodGroup:{{x.patientBloodGroup}}</tr>
+            <br/>
+        
+    </table>
+</div>
+
+

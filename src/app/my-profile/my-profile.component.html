@@ -1,0 +1,16 @@
+<h1>By Id</h1>
+<input type="text" #patientId>
+<button (click)="getPatients(patientId.value)">Search </button>
+    <table>
+        <tr>
+            <tr><td>Id:{{patient.patientId}}</td></tr>
+            <tr><td>Name:{{patient.patientName}}</td></tr>
+            <tr><td>City:{{patient.patientCity}}</td></tr>
+            <tr><td>Age:{{patient.patientAge}}</td></tr>
+            <tr><td>Gender:{{patient.patientGender}}</td></tr>
+            <tr><td>Disease:{{patient.patientDisease}}</td></tr>
+            <tr><td>PhoneNumber:{{patient.patientPhoneNumber}}</td></tr>
+            <tr><td>BloodGroup:{{patient.patientBloodGroup}}</td></tr>
+       
+    </table>
+
